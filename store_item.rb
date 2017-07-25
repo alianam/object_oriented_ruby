@@ -47,3 +47,7 @@ blue_paint.print_info
 p "changing the series..."
 blue_paint.series_change= "D"
 blue_paint.print_info
+
+# p blue_paint.color
+# p blue_paint.price
+# p blue_paint.series
