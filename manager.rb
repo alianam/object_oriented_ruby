@@ -37,7 +37,7 @@ class Manager < Employee
   def give_all_raises
     @employees.each do |employee|
       employee.give_annual_raise
-      p employee
+      # p employee
     end
   end
 
@@ -57,6 +57,9 @@ end
 manager = Manager.new(first_name: "Saron", last_name: "Yitbarek", salary: 100000, active: true, employees: [employee1, employee2])
 # manager.print_info
 # manager.send_report
+manager.give_all_raises
+p employee1
+p employee2
 
 manager.fire_all_employees
 p employee1
