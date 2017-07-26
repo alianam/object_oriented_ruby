@@ -1,3 +1,11 @@
+require 'faker'
+
+names = []
+
+100.times do |name|
+  names << Faker::Name.name
+end
+
 class Employee
   attr_reader :first_name, :last_name, :salary, :active
   # def first_name
