@@ -32,11 +32,11 @@ end
 bike = Bike.new
 car = Car.new
 
-faster_bike = bike.accelerate
-p faster_bike
+bike.accelerate
+p bike
 
-faster_car = car.accelerate
-p faster_car
+car.accelerate
+p car
 
 horn_bike = bike.ring_bell
 
