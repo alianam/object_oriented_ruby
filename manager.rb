@@ -29,10 +29,10 @@ class Manager < Employee
     @employees = input_options[:employees]
   end
 
-  def give_annual_raise
-    @salary = 1.05 * @salary
-    # p @salary
-  end
+  # def give_annual_raise
+  #   @salary = 1.05 * @salary
+  #   # p @salary
+  # end
 
   def give_all_raises
     @employees.each do |employee|

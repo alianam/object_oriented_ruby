@@ -1,10 +1,13 @@
 require 'faker'
 
-names = []
+employees = []
 
-100.times do |name|
-  names << Faker::Name.name
+100.times do
+  person = Employee.new(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name)
+  employees << person
 end
+
+puts names
 
 class Employee
   attr_reader :first_name, :last_name, :salary, :active
@@ -50,6 +53,11 @@ employee1 = Employee.new({:first_name => "Majora",
 
 employee1.full_name
 
+names.each do |name|
+  p name
+  # name.full_name
+  # p full_name
+end
 # employee1.print_info
 
 # "real life" version
