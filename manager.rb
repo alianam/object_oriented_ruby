@@ -41,6 +41,12 @@ class Manager < Employee
     end
   end
 
+  def fire_all_employees
+    @employees.each do |employee|
+      employee.active = false
+    end
+  end
+
   def send_report
     puts "Sending email..."
     # use email sending library...
@@ -52,4 +58,6 @@ manager = Manager.new(first_name: "Saron", last_name: "Yitbarek", salary: 100000
 # manager.print_info
 # manager.send_report
 
-manager.give_all_raises
+manager.fire_all_employees
+p employee1
+p employee2
