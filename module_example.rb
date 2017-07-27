@@ -1,4 +1,4 @@
-module Measureable
+module Movement
   def brake
     @speed = 0
   end
@@ -13,7 +13,7 @@ module Measureable
 end
 
 class Car
-  include Measureable
+  include Movement
 
   def initialize
     @speed = 0
@@ -26,7 +26,7 @@ class Car
 end
 
 class Bike
-  include Measureable
+  include Movement
   
   def initialize
     @speed = 0
