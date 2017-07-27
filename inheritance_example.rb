@@ -35,18 +35,6 @@ class Car < Vehicle
   def honk_horn
     puts "Beeeeeeep!"
   end
-
-  def fuel_range
-    @fuel_range
-  end
-
-  def make
-    @make
-  end
-
-  def model
-    @model
-  end
 end
 
 class Bike < Vehicle
@@ -63,17 +51,10 @@ class Bike < Vehicle
     puts "Ring ring!"
   end
 
-  def speed
-    @speed
-  end
-
-  # def type 
-  #   @type
+  # def speed
+  #   @speed
   # end
 
-  def weight
-    @weight
-  end
 end
 
 bike = Bike.new({:type => "schwinn", :weight => 10, :speed => 5, :direction => "South"})
