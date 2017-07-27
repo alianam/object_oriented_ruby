@@ -3,13 +3,14 @@ require './numerable.rb'
 require './food.rb'
 
 
-blue_paint = Paint.new({color: "blue", price: 10, series: "b"})
-yellow_paint = Paint.new({color: "yellow", price: 15, series: "a"})
-red_paint = Paint.new({color: "red", price: 9, series: "c"})
+blue_paint = StoreFront::Paint.new({color: "blue", price: 10, series: "b"})
+yellow_paint = StoreFront::Paint.new({color: "yellow", price: 15, series: "a"})
+red_paint = StoreFront::Paint.new({color: "red", price: 9, series: "c"})
 
-apple = Food.new({:color => "red", :shelf_life => 7, :price => 2})
+apple = StoreFront::Food.new({:color => "red", :shelf_life => 7, :price => 2, :weight => 5})
 p apple.shelf_life
 p apple.price
+p apple.weight
 
 blue_paint.print_info
 yellow_paint.print_info
